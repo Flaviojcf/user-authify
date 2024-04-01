@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run tsc --noEmit && jest",
+    "tsc": "tsc",
     "lint": "npx eslint . --ext .ts --fix",
     "build": "rm -rf dist && npx tsc",
     "dev": ""
