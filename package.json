@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run tsc --noEmit && jest"
+    "test": "npm run tsc --noEmit && jest",
+    "lint": "npx eslint . --ext .ts --fix",
+    "build": "rm -rf dist && npx tsc",
+    "dev": ""
   },
   "keywords": [],
   "author": "",
@@ -20,6 +23,7 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
     "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3"
