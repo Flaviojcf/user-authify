@@ -13,6 +13,6 @@ export default class User extends Entity {
     this._email = email
     this._password = password
 
-    this.validate()
+    // this.validate()
   }
 }
