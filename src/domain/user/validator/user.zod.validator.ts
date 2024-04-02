@@ -1,4 +1,5 @@
 import type ValidatorInterface from '../../../@shared/validator/validator.interface'
+import { ErrorConstants } from '../../utils/error-constants/erro.constants'
 import type User from '../entity/user'
 import * as zod from 'zod'
 
@@ -6,10 +7,10 @@ export default class UserZodValidator implements ValidatorInterface<User> {
   public validate (entity: User): void {
     try {
       const userSchema = zod.object({
-        id: zod.string().uuid({ message: 'Id is required' }).trim(),
-        name: zod.string().trim().min(1, { message: 'Name is required' }),
-        email: zod.string().trim().min(1, { message: 'Email is required' }),
-        password: zod.string().trim().min(1, { message: 'Password is required' })
+        id: zod.string().uuid({ message: ErrorConstants.user.id }).trim(),
+        name: zod.string().trim().min(1, { message: ErrorConstants.user.name }),
+        email: zod.string().trim().min(1, { message: ErrorConstants.user.email }),
+        password: zod.string().trim().min(1, { message: ErrorConstants.user.password })
       })
 
       userSchema.parse({
