@@ -1,5 +1,5 @@
-import type ValidatorInterface from '../../../@shared/validator/validator.interface'
-import { ErrorConstants } from '../../utils/error-constants/erro.constants'
+import { ErrorConstants } from '../../@shared/utils/error-constants/erro.constants'
+import type ValidatorInterface from '../../@shared/validator/validator.interface'
 import type User from '../entity/user'
 import * as zod from 'zod'
 

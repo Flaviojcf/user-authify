@@ -1,4 +1,4 @@
-import type ValidatorInterface from '../../../@shared/validator/validator.interface'
+import type ValidatorInterface from '../../@shared/validator/validator.interface'
 import type User from '../entity/user'
 import UserZodValidator from '../validator/user.zod.validator'
 
