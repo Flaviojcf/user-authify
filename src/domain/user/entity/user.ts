@@ -1,4 +1,4 @@
-import BaseEntity from '../../../@shared/entity/entity.abstract'
+import BaseEntity from '../../../@shared/entity/baseEntity.abstract'
 import UserValidatorFactory from '../factory/user.validator.factory'
 import NotificationError from '../notification/notification.error'
 
