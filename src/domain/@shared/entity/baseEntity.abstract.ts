@@ -1,4 +1,4 @@
-import Notification from '../../domain/user/notification/notification'
+import Notification from '../../user/notification/notification'
 
 export default abstract class BaseEntity {
   protected _id: string

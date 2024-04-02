@@ -1,4 +1,4 @@
-import BaseEntity from '../../../@shared/entity/baseEntity.abstract'
+import BaseEntity from '../../@shared/entity/baseEntity.abstract'
 import UserValidatorFactory from '../factory/user.validator.factory'
 import NotificationError from '../notification/notification.error'
 
@@ -6,7 +6,7 @@ export default class User extends BaseEntity {
   private readonly _name: string
   private readonly _email: string
   private readonly _password: string
-  private _active: boolean
+  private _register: Date
 
   constructor (id: string, name: string, email: string, password: string) {
     super()
@@ -33,16 +33,12 @@ export default class User extends BaseEntity {
     return this._password
   }
 
-  isActive (): boolean {
-    return this._active
+  isRegistred (): Date {
+    return this._register
   }
 
-  activate (): void {
-    this._active = true
-  }
-
-  deactivate (): void {
-    this._active = false
+  register (): void {
+    this._register = new Date()
   }
 
   public validate (): void {
