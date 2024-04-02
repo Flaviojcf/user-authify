@@ -33,7 +33,7 @@ export default class User extends BaseEntity {
     return this._password
   }
 
-  isRegistred (): Date {
+  isRegistered (): Date {
     return this._register
   }
 
