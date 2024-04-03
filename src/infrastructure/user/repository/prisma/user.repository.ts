@@ -63,4 +63,19 @@ export default class UserRepository implements UserRepositoryInterface {
 
     return userL
   }
+
+  async delete (id: string): Promise<void> {
+    try {
+      const findedUser = this.find(id)
+      if (findedUser != null) {
+        await prisma.user.delete({
+          where: {
+            id
+          }
+        })
+      }
+    } catch (error) {
+      throw new Error('User not found')
+    }
+  }
 }
