@@ -8,7 +8,9 @@
     "tsc": "tsc",
     "lint": "npx eslint . --ext .ts --fix",
     "build": "rm -rf dist && npx tsc",
-    "dev": ""
+    "dev": "",
+    "up": "docker compose up -d",
+    "down": "docker compose down"
   },
   "keywords": [],
   "author": "",
