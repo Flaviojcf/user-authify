@@ -1,4 +1,4 @@
-import { ErrorConstants } from '../../@shared/utils/error-constants/erro.constants'
+import { ErrorConstants } from '../../@shared/utils/error-constants/error.constants'
 import User from './user'
 
 describe('User unit tests', () => {

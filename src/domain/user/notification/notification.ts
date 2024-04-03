@@ -14,7 +14,7 @@ export default class Notification {
     let message = ''
 
     this.errors.forEach((error) => {
-      if (context === undefined) {
+      if (error.context === undefined || error.context === context) {
         message += `${error.context}: ${error.message},`
       }
     })
