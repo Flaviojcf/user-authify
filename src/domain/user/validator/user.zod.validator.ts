@@ -7,14 +7,12 @@ export default class UserZodValidator implements ValidatorInterface<User> {
   public validate (entity: User): void {
     try {
       const userSchema = zod.object({
-        id: zod.string().uuid({ message: ErrorConstants.user.id }).trim(),
-        name: zod.string().trim().min(1, { message: ErrorConstants.user.name }),
-        email: zod.string().trim().min(1, { message: ErrorConstants.user.email }),
-        password: zod.string().trim().min(1, { message: ErrorConstants.user.password })
+        name: zod.string({ required_error: ErrorConstants.user.name }),
+        email: zod.string({ required_error: ErrorConstants.user.email }),
+        password: zod.string({ required_error: ErrorConstants.user.password })
       })
 
       userSchema.parse({
-        id: entity.id,
         name: entity.name,
         email: entity.email,
         password: entity.password
