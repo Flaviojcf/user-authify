@@ -14,9 +14,9 @@ datasource db {
 }
 
 model User {
-  id            String   @id @default(uuid())
+  id            String    @id @default(uuid())
   name          String
-  email         String   @unique
+  email         String    @unique
   password      String
-  is_registered DateTime
+  is_registered DateTime?
 }

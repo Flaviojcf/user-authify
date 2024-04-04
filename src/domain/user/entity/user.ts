@@ -8,12 +8,13 @@ export default class User extends BaseEntity {
   private readonly _password: string
   private _register: Date
 
-  constructor (id: string, name: string, email: string, password: string) {
+  constructor (id: string, name: string, email: string, password: string, register: Date) {
     super()
     this._id = id
     this._name = name
     this._email = email
     this._password = password
+    this._register = register
     this.validate()
 
     if (this.notification.hasErrors()) {
