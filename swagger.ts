@@ -8,7 +8,7 @@ const options: swaggerJsdoc.Options = {
     info: {
       title: 'Authify API',
       version: '1.0.0',
-      description: 'Authify is an API to create and authenticate a user with 2FA'
+      description: 'Authify is an API to create and authenticate an user with 2FA'
     }
   },
   apis: [path.resolve(__dirname, './src/infrastructure/api/routes/*.swagger.route.ts')]
