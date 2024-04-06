@@ -1,6 +1,6 @@
 import express, { type Express } from 'express'
-import { swaggerUiServe, swaggerUiSetup } from '../../../swagger'
-import { userRoute } from './routes/user.route'
+import { swaggerUiServe, swaggerUiSetup } from '../../swagger'
+import { userRoute } from '../infrastructure/api/routes/user.route'
 
 export const app: Express = express()
 app.use(express.json())

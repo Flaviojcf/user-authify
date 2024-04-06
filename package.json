@@ -8,7 +8,7 @@
     "tsc": "tsc",
     "lint": "npx eslint . --ext .ts --fix",
     "build": "rm -rf dist && npx tsc",
-    "dev": "nodemon --exec ts-node-dev src/infrastructure/api/server.ts --respawn --transpile-only",
+    "dev": "nodemon --exec ts-node-dev src/main/server.ts --respawn --transpile-only",
     "up": "docker compose up -d",
     "down": "docker compose down"
   },
