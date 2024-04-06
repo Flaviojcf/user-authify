@@ -1,6 +1,6 @@
 import express, { type Request, type Response } from 'express'
-import CreateUserUseCase from '../../../usecase/user/create/create.user.usecase'
-import UserRepository from '../../user/repository/prisma/user.repository'
+import CreateUserUseCase from '../../../../usecase/user/create/create.user.usecase'
+import UserRepository from '../../../../infrastructure/database/postgres/prisma/user/repository/user.repository'
 
 export const userRoute = express.Router()
 userRoute.post('/', async (request: Request, response: Response) => {

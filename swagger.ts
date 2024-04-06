@@ -11,7 +11,7 @@ const options: swaggerJsdoc.Options = {
       description: 'Authify is an API to create and authenticate an user with 2FA'
     }
   },
-  apis: [path.resolve(__dirname, './src/infrastructure/api/routes/*.swagger.route.ts')]
+  apis: [path.resolve(__dirname, './src/presentation/user/rest/route/*.swagger.route.ts')]
 }
 
 const specs = swaggerJsdoc(options)

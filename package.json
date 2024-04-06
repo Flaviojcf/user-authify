@@ -13,7 +13,7 @@
     "down": "docker compose down"
   },
   "prisma": {
-    "schema": "src/infrastructure/user/repository/prisma/schema.prisma"
+    "schema": "src/infrastructure/database/postgres/prisma/schema.prisma"
   },
   "keywords": [],
   "author": "",
