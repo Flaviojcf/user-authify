@@ -1,4 +1,4 @@
-import { ErrorConstants } from '../../../shared/utils/error-constants/error.constants'
+import { ErrorConstants } from '../../../shared/constants/error-constants/error.constants'
 import Notification from './notification'
 
 describe('Unit test for notification', () => {

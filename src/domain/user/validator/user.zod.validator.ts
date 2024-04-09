@@ -1,4 +1,4 @@
-import { ErrorConstants } from '../../../shared/utils/error-constants/error.constants'
+import { ErrorConstants } from '../../../shared/constants/error-constants/error.constants'
 import type ValidatorInterface from '../../@shared/validator/validator.interface'
 import type User from '../entity/user'
 import * as zod from 'zod'
