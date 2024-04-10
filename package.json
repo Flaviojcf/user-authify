@@ -12,6 +12,9 @@
     "up": "docker compose up -d",
     "down": "docker compose down"
   },
+  "prisma": {
+    "schema": "src/infrastructure/database/postgres/prisma/schema.prisma"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

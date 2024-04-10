@@ -1,6 +1,6 @@
 import UserFactory from '../../../domain/user/factory/user.factory'
-import type UserRepositoryInterface from '../../../domain/user/interfaces/repository/user.repository.interface'
-import { type InputCreateUserDTO, type OutputCreateUserDTO } from './create.user.dto'
+import type UserRepositoryInterface from '../../../infrastructure/database/postgres/prisma/user/repository/user.repository.interface'
+import { type InputCreateUserDTO, type OutputCreateUserDTO } from './dto/create.user.dto'
 
 export default class CreateUserUseCase {
   private readonly _userRepository: UserRepositoryInterface

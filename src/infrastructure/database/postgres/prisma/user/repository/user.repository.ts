@@ -1,7 +1,7 @@
-import type User from '../../../../domain/user/entity/user'
-import UserFactory from '../../../../domain/user/factory/user.factory'
-import type UserRepositoryInterface from '../../../../domain/user/interfaces/repository/user.repository.interface'
-import { prisma } from '../../../database/prisma'
+import type User from '../../../../../../domain/user/entity/user'
+import UserFactory from '../../../../../../domain/user/factory/user.factory'
+import type UserRepositoryInterface from './user.repository.interface'
+import { prisma } from '../../prisma'
 
 export default class UserRepository implements UserRepositoryInterface {
   async create (entity: User): Promise<void> {
