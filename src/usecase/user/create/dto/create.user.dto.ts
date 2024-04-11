@@ -5,7 +5,9 @@ export interface InputCreateUserDTO {
 }
 
 export interface OutputCreateUserDTO {
+  id: string
   name: string
   email: string
   isRegistered: Date
+  validationId: string
 }
