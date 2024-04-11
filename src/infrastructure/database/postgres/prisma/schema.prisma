@@ -19,4 +19,5 @@ model User {
   email         String    @unique
   password      String
   is_registered DateTime?
+  validation_id String?   @unique @default(uuid())
 }
