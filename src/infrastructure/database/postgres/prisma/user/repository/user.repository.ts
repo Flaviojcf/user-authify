@@ -33,7 +33,6 @@ export default class UserRepository implements UserRepositoryInterface {
   }
 
   async update (entity: User): Promise<void> {
-    console.log(entity)
     try {
       await prisma.user.update({
         data: {
@@ -65,14 +64,11 @@ export default class UserRepository implements UserRepositoryInterface {
 
   async delete (id: string): Promise<void> {
     try {
-      const findedUser = this.find(id)
-      if (findedUser != null) {
-        await prisma.user.delete({
-          where: {
-            id
-          }
-        })
-      }
+      await prisma.user.delete({
+        where: {
+          id
+        }
+      })
     } catch (error) {
       throw new Error('User not found')
     }
