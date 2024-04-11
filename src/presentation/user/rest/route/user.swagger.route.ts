@@ -41,4 +41,6 @@
  *         isRegistered:
  *           type: string
  *           format: date-time
+ *         validationId:
+ *           type: string
  */
